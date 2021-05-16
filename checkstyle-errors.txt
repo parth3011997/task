@@ -20,7 +20,7 @@ You have named the file as algo but the program contains the class name which
 is different. As the issue explains the filename shall match that of the class
 name in the file. 
 
-4. Keep rerunning until all warnings are fixed.
+4. Keep fixing and rechecking with the step 2 until all warnings are fixed.
   
 
 
