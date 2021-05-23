@@ -8,15 +8,17 @@
  *
  */
 
-package array; 
+package numbers-util; 
 
 import java.util.Scanner;
 
 
 public class RemoveduplicateNumber {
   public static void main(String [] args) {
-    System.out.println("please enter the size of array");
+    System.out.println("This program removes duplciates from the series you enter");
+    System.out.println("Please enter total numbers in your series:");
     Scanner scanethevalue = new Scanner(System.in);
+    System.out.println("Please enter each number in your series in a sorted order:");
     int x = scanethevalue.nextInt();
     int [] array = new int[x];
     int [] temparray = new int[x];
@@ -39,6 +41,7 @@ public class RemoveduplicateNumber {
       if (array[x - 2] !=  array[x - 1]) {
         temparray[j++] = array[x - 1];
       }
+      System.out.println("Series without the duplicates printed below.");
       for (int i = 0; i < j; i++) {
         System.out.println(temparray[i]);
       }
