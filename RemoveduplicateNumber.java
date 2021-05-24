@@ -8,7 +8,7 @@
  *
  */
 
-package numbers-util; 
+package array; 
 
 import java.util.Scanner;
 
