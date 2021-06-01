@@ -15,8 +15,10 @@ import java.util.Scanner;
 
 public class RemoveduplicateNumber {
   public static void main(String [] args) {
-    System.out.println("This program removes duplciates from the series you enter");
-    System.out.println("Please enter total numbers in your series:");
+   // System.out.println("This program removes duplciates from the series you enter");
+   // System.out.println("Please enter total numbers in your series:");
+   	System.out.println("This program is remove the duplicate from the series you enter");
+	System.out.println("please enter the totle numbers in your series");	
     Scanner scanethevalue = new Scanner(System.in);
     System.out.println("Please enter each number in your series in a sorted order:");
     int x = scanethevalue.nextInt();
@@ -33,15 +35,23 @@ public class RemoveduplicateNumber {
         if (array[i] != array[i + 1]) {
           if (i == 0) {
             temparray[j++] = array[i];
+            count++;
           } else if (array[i - 1] !=  array[i]) {
             temparray[j++] = array[i];
+            count++;
           }
+          count++;
         }
       }
       if (array[x - 2] !=  array[x - 1]) {
         temparray[j++] = array[x - 1];
+        count++;
       }
       System.out.println("Series without the duplicates printed below.");
+      if(count == 0)
+      {
+    	  System.out.println("Series of All The numbers is equal");
+      }
       for (int i = 0; i < j; i++) {
         System.out.println(temparray[i]);
       }
