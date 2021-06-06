@@ -1,12 +1,7 @@
-/**
- * Program to remove duplicates from the sequence entered by the user. 
- *
- * <p> 
- * test case input = -1,-1,-1,0,0,2,2     output = 
- * test case input = 1,1,1,2,2,3,3,3,3,4,5,5,6,7,7,7,11,11,15,17
- * test case input = -10,-9,-5,-5,-5,-3,-3 output = -10,-9,-5,-3
- *
- */
+//
+// test case input = -1,-1,-1,0,0,2,2     output = -1,0,2
+ // test case input = 1,1,1,2,2,3,3,3,3,4,5,5,6,7,7,7,11,11,15,17 output=1,2,3,4,5,6,7,11,15,17
+ //test case input = -10,-9,-5,-5,-5,-3,-3 output = -10,-9,-5,-3
 
 package array; 
 
