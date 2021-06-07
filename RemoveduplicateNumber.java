@@ -33,16 +33,12 @@ public class RemoveduplicateNumber {
     if (x > 1) {
       //if x = 1 the loop is out of bound
       for (int i = 0; i < x - 1; i++) {
-    	if(array[i] != array[i+1])//check the i,th value is note equal to i+1 value
+    	  if(array[i] != array[i+1])//check the array i value and i+1 value
 			{
-					temparray[j++] = array[i]; //store the i th value in the temp array 
+					temparray[j++] = array[i]; // store the i th vale in the temparray
 			}
       } 
-      temparray[j++] = array[x - 1];//last value will be store in the temparray
-      }
-      if (temparray[j] !=  array[x - 1]) {//store the last value and comper with second last value
-        temparray[j++] = array[x - 1];
-      }
+      temparray[j++] = array[x - 1];//
       System.out.println("Series without the duplicates printed below.");
       for (int i = 0; i < j; i++) {
         System.out.println(temparray[i]);
