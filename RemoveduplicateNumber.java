@@ -33,13 +33,12 @@ public class RemoveduplicateNumber {
     if (x > 1) {
       //if x = 1 the loop is out of bound
       for (int i = 0; i < x - 1; i++) {
-    	  if(array[i] != array[i+1])// i will check the array[i] value is not equal to array[i+1]
+    	if(array[i] != array[i+1])//check the i,th value is note equal to i+1 value
 			{
-				if(temparray[j] != array[i])//check the value of temparray[j] value is equal to the array[i]
-				{
-					temparray[j++] = array[i];
-				}
+					temparray[j++] = array[i]; //store the i th value in the temp array 
 			}
+      } 
+      temparray[j++] = array[x - 1];//last value will be store in the temparray
       }
       if (temparray[j] !=  array[x - 1]) {//store the last value and comper with second last value
         temparray[j++] = array[x - 1];
