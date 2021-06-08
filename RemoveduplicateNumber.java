@@ -16,10 +16,10 @@ import java.util.Scanner;
 
 public class RemoveduplicateNumber {
   public static void main(String [] args) {
-   // System.out.println("This program removes duplciates from the series you enter");
-   // System.out.println("Please enter total numbers in your series:");
-   	System.out.println("This program is remove the duplicate from the series you enter");
-	System.out.println("please enter the totle numbers in your series");	
+    // System.out.println("This program removes duplciates from the series you enter");
+    // System.out.println("Please enter total numbers in your series:");
+    System.out.println("This program is remove the duplicate from the series you enter");
+    System.out.println("please enter the totle numbers in your series");	
     Scanner sc = new Scanner(System.in);
     int x = sc.nextInt();
     int [] array = new int[x];
@@ -29,14 +29,14 @@ public class RemoveduplicateNumber {
     for (int i = 0; i < x; i++) {
       array[i] = sc.nextInt();
     }
-    
+
     if (x > 1) {
       //if x = 1 the loop is out of bound
       for (int i = 0; i < x - 1; i++) {
-    	  if(array[i] != array[i+1])//check the array i value and i+1 value
-			{
-					temparray[j++] = array[i]; // store the i th vale in the temparray
-			}
+        if(array[i] != array[i+1])//check the array i value and i+1 value
+        {
+          temparray[j++] = array[i]; // store the i th vale in the temparray
+        }
       } 
       temparray[j++] = array[x - 1];//
       System.out.println("Series without the duplicates printed below.");
